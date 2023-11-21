@@ -1,0 +1,175 @@
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: url("bg1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    padding: 4vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.form{
+    border:0.5px  solid black;
+    box-shadow: 0px 0px 5vw 3vw #000000;
+    background: url("icon2.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    min-width: 400px;
+    height: 80vh;
+    border-top-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+}
+
+.form1-label label{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0.2vw;
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+    background-color: rgba(0, 0, 0, 0.668);
+    border: 0;
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    margin: 0.2vw;
+    width: 25vw;
+    height: 2vw;
+    padding: 0.4vw;
+    text-align: left;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px #fff;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2em;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type="submit"]{
+    margin: 1vw 0vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(106, 31, 85);
+    border: 0;
+    border-radius: 2em;
+    width: 10vw;
+    height: 3vw;
+    padding: .4em;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    outline:none;
+    position:relative;
+    overflow:hidden;
+    z-index:999;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5), inset -2px
+    2px 2px 0px rgba(255,255,255,.2);
+    &::before {
+        content:"";
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        right:-2px;
+        bottom:-2px;
+        background:#ffaaee;
+        z-index:-1;
+        opacity:0;
+        transform:scaleX(.5) scaleY(.5);
+        animation: shine 2s infinite linear;
+        }
+}
+input[type="submit"]:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+}
+.signin{
+    margin-top: 3vw;
+}
+.signin label{
+    color: #334411;
+    margin-bottom: .6em;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-
+    serif;
+}
+.signin input[type="button"]{
+    background-color: rgb(106, 31, 85);
+    border: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1em;
+    font-weight:100;
+    letter-spacing: 0.1em;
+    padding:10px;
+    cursor: pointer;
+    display:inline-block;
+    margin:0 auto;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2em;
+    line-height: 1.5;
+    outline:none;
+    position:relative;
+    overflow:hidden;
+    z-index:999;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5), inset -2px
+    2px 2px 0px rgba(255,255,255,.2);
+    &::before {
+        content:"";
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        right:-2px;
+        bottom:-2px;
+        background:#ffaaee;
+        z-index:-1;
+        opacity:0;
+        transform:scaleX(.5) scaleY(.5);
+        animation: shine 2s infinite linear;
+        }
+}
+.signin input[type="button"]::after{
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+.links{
+    margin-top: 2vw;
+}
+.links a{
+    text-decoration: none;
+    color: #334411;
+    font-size: 1.6em;
+    letter-spacing: 2em;
+}
+
